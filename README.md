@@ -103,13 +103,16 @@ Other security enforcing packages like [audit-argument-checks](https://docs.mete
   * jquery
   * underscore
   * raix:handlebar-helpers
+* Testing
+  * sanjo:jasmine
+  * velocity:html-reporter
 
 The "insecure" and "autopublish" packages are removed by default (they make your app vulnerable).
 
 ### Folder structure
 
 ```
-client/ 				# Client folder
+client/ 			 # Client folder
     compatibility/      # Libraries which create a global variable
     config/             # Configuration files (on the client)
 	lib/                # Library files that get executed first
@@ -127,7 +130,7 @@ server/					# Server folder
     lib/                # Server side library folder
     publications/       # Collection publications(*)
     startup/            # On server startup
-tests/          # Tests folder
+tests/  				# Tests folder
 meteor-boilerplate		# Command line tool
 ```
 

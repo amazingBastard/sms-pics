@@ -22,4 +22,6 @@ useraccounts:semantic-ui
 natestrauser:animate-css
 dburles:collection-helpers
 meteorhacks:fast-render
+sanjo:jasmine
+velocity:html-reporter
 
