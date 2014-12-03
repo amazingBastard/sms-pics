@@ -112,7 +112,7 @@ The "insecure" and "autopublish" packages are removed by default (they make your
 ### Folder structure
 
 ```
-client/ 			   # Client folder
+client/ 			     # Client folder
     compatibility/      # Libraries which create a global variable
     config/             # Configuration files (on the client)
 	lib/                # Library files that get executed first
