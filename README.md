@@ -1,6 +1,6 @@
-# Live Social Playlist
+# SMS-PICS
 
-This app allows users to create their own live music streaming sessions or join other channels and interact with the DJ through chat.
+This app allows users to share photos, videos, and sound bites via sms text message.
 
 <!-- toc -->
 
@@ -17,7 +17,7 @@ This app allows users to create their own live music streaming sessions or join 
 
 <!-- toc stop -->
 
-View the demo here: [dj.meteor.com](http://dj.meteor.com).
+View the demo here: [snich.meteor.com](http://snich.meteor.com).
 
 ## Developper's Guide
 
@@ -131,10 +131,9 @@ server/					# Server folder
     publications/       # Collection publications(*)
     startup/            # On server startup
 tests/  				# Tests folder
-meteor-boilerplate		# Command line tool
 ```
 
 (*) = the command line tool creates files in these folders
 
 ## License
-This project is NOT free for use and has been licensed, see the LICENSE.txt for more information.
+This project has an MIT License, see the LICENSE.txt for more information.
