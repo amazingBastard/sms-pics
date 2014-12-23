@@ -1,5 +1,17 @@
 <template name="home">
   <div class="home view">
-    <h1>Home View</h1>
+    {{#if currentUser}}
+      <div class="ui stackable page grid">
+        <div class="column">
+          {{> albums}}
+        </div>
+      </div>
+    {{else}}
+      <div class="ui stackable page grid">
+        <div class="column">
+          {{> atForm}}
+        </div>
+      </div>
+    {{/if}}
   </div>
 </template>

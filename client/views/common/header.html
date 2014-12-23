@@ -4,9 +4,15 @@
       {{constant 'name'}}
     </a>
     <div class="right menu">
-      <a class="item">
-        Login
-      </a>
+      {{#if currentUser}}
+        <a class="item" href="#">
+          {{currentUser.username}}
+        </a>
+      {{else}}
+        <a class="item" href="#">
+          Login
+        </a>
+      {{/if}}
     </div>
   </div>
 </template>
