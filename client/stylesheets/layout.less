@@ -1,0 +1,76 @@
+@import 'helpers';
+@import 'variables';
+@import 'lib/elements';
+
+// Layout styles
+
+html {
+  height: 100%;
+  font-family: @font-family-base;
+
+  body {
+    height: 100%;
+
+    .layout {
+      min-height: 100%;
+      overflow-x: hidden;
+      background: @background-color;
+
+      .header {
+
+        .ui.menu {
+          background: @light;
+          border-bottom: 1px solid @dark;
+          border-radius: 0;
+          color: @toolbar-font-color;
+
+          .brand.item {
+            font-family: @font-family-brand;
+            color: @link-color;
+          }
+
+          .right.menu {
+
+            .item {
+              font-size: @toolbar-font-size;
+              line-height: @toolbar-line-height;  
+            }
+          }
+        }
+      }
+
+      .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+
+        .ui.menu {
+          background: @light;
+          border-top: 1px solid @dark;
+          border-radius: 0;
+          color: @toolbar-font-color;
+
+          .action.item {
+            width: 40%;
+            font-size: @toolbar-font-size;
+            line-height: @toolbar-line-height;
+          }
+
+          .right.menu {
+            width: 60%;
+
+            .ui.icon.input {
+              padding-top: 6px;
+
+              input {
+                border-radius: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

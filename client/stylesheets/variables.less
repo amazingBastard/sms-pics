@@ -1,17 +1,66 @@
 // Declare variables for use in all the template specific / main less files
 
+// Monochrome
+
+@dark:         #000;
+@gray-darker:  lighten(#000, 13.5%); // #222
+@gray-dark:    lighten(#000, 20%);   // #333
+@gray:         lighten(#000, 33.5%); // #555
+@gray-light:   lighten(#000, 46.7%); // #777
+@gray-lighter: lighten(#000, 93.5%); // #eee
+@light:        #fff;
+
+// Brand HEX
+
+/*
+// venus-orange: #DC4E00;
+// europa-blue: #89CEDE;
+// io-white: #F4F5ED;
+// comet-gray: #929487;
+// cloud-gray: #C7C9BE;
+*/
+
+@background-color: #F4F5ED;
+@font-color: #2B2C28;
+@toolbar-font-color: #929487;
+@link-color: #DC4E00;
+@line-color: #B6B6B6;
+@alert-color: #89CEDE;
+
 // Typography
-@primaryLinkHoverColor: #682d71;
-@secondaryLinkHoverColor: #bd6ddb;
-@primaryFontColor: #1f1f1f;
-@secondaryFontColor: #f6eff4;
-@secondaryFontColorVariation: #DDDDDD;
-@primaryIconColor: #1b3fc3;
 
-// Backgrounds
+@font-family-sans-serif:  "Open Sans", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-cursive:     "Pacifico", Helvetica, Arial, sans-serif;
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+@font-family-brand:       @font-family-cursive;
 
-// Width variables
-@large-desktop-width: 1280px;
+@font-size-base:          1em;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+@line-height-base:        1.428571429; // 20/14
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+@headings-font-family:    inherit;
+@headings-font-weight:    500;
+@headings-line-height:    1.1;
+@headings-color:          inherit;
+
+@toolbar-font-size: 14px;
+@toolbar-line-height: 1.3;
+
+// Media Queries
+
+@large-desktop-width: 1200px;
 @medium-desktop-width: 992px;
 @tablet-width: 768px;
-@phone-width: 480px;
+@phone-width: 400px;
