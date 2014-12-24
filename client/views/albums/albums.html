@@ -1,3 +1,6 @@
 <template name="albums">
-  <h1>Albums</h1>
+  <h1 class="aligned center">Albums</h1>
+  {{#each albums}}
+    {{> albumsItem}}
+  {{/each}}
 </template>

@@ -1,3 +1,3 @@
 Meteor.publish('albums', function() {
-    return Albums.find();
+  return Albums.find();
 });

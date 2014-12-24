@@ -8,5 +8,7 @@ function loadFixture(fixtures, collection) {
 }
 
 Meteor.startup(function () {
-  loadFixture(Fixtures['albums'], Albums);
+  if (Albums.find().count() === 0) {
+    loadFixture(Fixtures['albums'], Albums);
+  }
 });
