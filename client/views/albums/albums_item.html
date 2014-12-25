@@ -1,6 +1,20 @@
 <template name="albumsItem">
-  <h2>{{category}}</h2>
-  {{#each images}}
-    <img src="{{img}}" />
-  {{/each}}
+  <article class="ui albums-item" id="{{_id}}">
+    <a class="album-show" href="#">
+      <h2>{{category}}</h2>
+      <div class="ui three column grid">
+        {{#each images}}
+          <div class="column">
+            <div class="ui background image" style="background: url('{{img}}');"></div>
+          </div>
+        {{/each}}
+      </div>
+    </a>
+
+    {{> albumActions}}
+
+    {{#if settingsShow}}
+      {{> albumSettings}}
+    {{/if}}
+  </article>
 </template>
