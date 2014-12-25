@@ -1,6 +1,6 @@
 <template name="albumsItem">
   <article class="ui albums-item" id="{{_id}}">
-    <a class="album-show" href="#">
+    <a class="album-show" href="{{pathFor 'album'}}">
       <h2>{{category}}</h2>
       <div class="ui three column grid">
         {{#each images}}
