@@ -1,5 +1,17 @@
 <template name="album">
   <div class="album view">
-    <h1>{{category}}</h1>
+    <h1 class="ui center aligned title">{{category}}</h1>
+    <div class="ui stackable page grid">
+      <div class="column">
+        <div class="ui album-items">
+          {{#each images}}
+            <div class="album-item">
+              <img src="{{img}}" class="album-image" />
+            </div>
+          {{/each}}
+        </div>
+        <a class="ui basic fluid button" href="{{pathFor 'home'}}">Back to Albums</a>
+      </div>
+    </div>
   </div>
 </template>

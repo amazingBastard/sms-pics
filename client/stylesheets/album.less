@@ -1,0 +1,59 @@
+@import 'helpers';
+@import 'variables';
+
+// Album styles
+
+.album.view {
+
+  .ui.title {
+    margin: 1em 0;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .ui.page.grid {
+
+    .column {
+
+      .ui.album-items {
+        padding: 0;
+        margin: 0 1px;
+        line-height: 0;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 0;
+        -webkit-column-fill: auto;
+        -moz-column-count: 2;
+        -moz-column-gap: 0;
+        -moz-column-fill: auto;
+        column-count: 2;
+        column-gap: 0;
+        column-fill: auto;
+
+        .album-item {
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: auto;
+          border-radius: 0.25em;
+          -webkit-column-break-inside: avoid;
+          -moz-column-break-inside: avoid;
+          column-break-inside: avoid;
+
+          .album-image {
+            display: block;
+            height: auto;
+            width: 100%;
+            margin: 0 auto;
+            border: 1px solid @background-color;
+            border-radius: 0.25em;
+          }
+        }
+      }
+
+      .ui.basic.button {
+        margin: 1em 0 4em;
+      }
+    }
+  }
+}
