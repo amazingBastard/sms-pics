@@ -1,0 +1,45 @@
+<template name="createForm">
+  <div class="ui form">
+    <div class="field">
+      <label>Album Title</label>
+      <input type="text" value="Puppies">
+    </div>
+    <div class="field">
+      <label>Share this album</label>
+      <a class="ui basic fluid button">Import contacts from Address Book</a>
+    </div>
+    <div class="field">
+      <div class="ui toggle checkbox">
+        <input type="checkbox" name="privacy">
+        <label>Album is private</label>
+      </div>
+    </div>
+    <div class="field">
+      <label>SMS Note</label>
+      <textarea value='Text photos from “ALBUM TITLE” to “Account Number”. You can view this album at “ALBUM PAGE”'></textarea>
+    </div>
+    <div class="field">
+      <label>Genre</label>
+      <div class="ui fluid selection dropdown">
+        <div class="default text">Select genre</div>
+        <i class="dropdown icon"></i>
+        <input name="hidden-field" type="hidden">
+        <div class="menu">
+          <div class="item" data-value="space">Space</div>
+          <div class="item" data-value="puppies">Puppies</div>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label>SMS Number</label>
+      <input type="text" value="123-123-1234 #puppies">
+    </div>
+    <div class="field">
+      <label>Album Page</label>
+      <input type="text" value="snich.com/albums/puppies">
+    </div>
+    <div class="field">
+      <a class="ui basic fluid button">Share Album</a>
+    </div>
+  </div>
+</template>

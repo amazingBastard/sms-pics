@@ -14,6 +14,16 @@ Router.route('/', function () {
   }
 });
 
+Router.route('/albums/create', {
+  name: 'albumCreate',
+  action: function () {
+    if (this.ready())
+      this.render('albumCreate');
+    else
+      this.render('loading');
+  }
+});
+
 Router.route('/albums/:_id', {
   name: 'album',
   data: function() {
