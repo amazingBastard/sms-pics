@@ -22,3 +22,9 @@ useraccounts:semantic-ui
 natestrauser:animate-css
 dburles:collection-helpers
 meteorhacks:fast-render
+meteorhacks:npm
+sanjo:jasmine
+velocity:html-reporter
+
+
+npm-container
